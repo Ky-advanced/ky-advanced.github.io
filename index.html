@@ -66,7 +66,8 @@
             margin-bottom: 10px;
         }
         
-        a.download-link {
+        a.download-link,
+        a.telegram-link {
             display: inline-block;
             background-color: #673ab7;
             color: white;
@@ -78,8 +79,17 @@
             transition: background-color 0.3s ease;
         }
         
-        a.download-link:hover {
+        a.download-link:hover,
+        a.telegram-link:hover {
             background-color: #512da8;
+        }
+        
+        /* Обновленные стили для иконки Telegram */
+        .telegram-icon {
+            vertical-align: middle;
+            margin-right: 8px;
+            max-width: 24px;
+            max-height: 24px;
         }
         
         @media only screen and (max-width: 768px) {
@@ -116,6 +126,11 @@
                 <a href="https://example.com/download-game3" class="download-link">Скачать</a>
             </div>
         </div>
+        
+        <!-- Добавляем кнопку -->
+        <a href="https://t.me/KyDevs" class="telegram-link" target="_blank">
+            <img src="telegram.png" alt="Telegram Icon" class="telegram-icon"> Наш Telegram канал
+        </a>
     </div>
 </body>
 </html>
