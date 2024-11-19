@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ky Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        header {
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            font-size: 40px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        p.slogan {
+            font-size: 24px;
+            color: #888;
+        }
+        
+        .game-card {
+            background-color: #202020;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+            padding: 20px;
+            margin-bottom: 30px;
+            display: inline-block;
+            width: 300px;
+            text-align: center;
+        }
+        
+        .game-card img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        
+        .game-title {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        a.download-link {
+            display: inline-block;
+            background-color: #673ab7;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        a.download-link:hover {
+            background-color: #512da8;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .game-card {
+                width: 80%;
+                margin: 0 auto 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ky Developer</h1>
+            <p class="slogan">Без СМС и регистрации</p>
+        </header>
+        
+        <div class="game-cards">
+            <div class="game-card">
+                <img src="NullGame.png" alt="Игра 1">
+                <div class="game-title">Название игры 1</div>
+                <a href="https://example.com/download-game1" class="download-link">Скачать</a>
+            </div>
+            
+            <div class="game-card">
+                <img src="NullGame.png" alt="Игра 2">
+                <div class="game-title">Название игры 2</div>
+                <a href="https://example.com/download-game2" class="download-link">Скачать</a>
+            </div>
+            
+            <div class="game-card">
+                <img src="NullGame.png" alt="Игра 3">
+                <div class="game-title">Название игры 3</div>
+                <a href="https://example.com/download-game3" class="download-link">Скачать</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
