@@ -16,7 +16,7 @@
             background-color: #121212;
             color: #fff;
             display: flex;
-            justify-content: center;
+            flex-direction: column; /* Изменено для вертикального расположения */
             align-items: center;
             min-height: 100vh;
         }
@@ -67,7 +67,8 @@
         }
         
         a.download-link,
-        a.telegram-link {
+        a.telegram-link,
+        a.top-button { /* Добавлено новое правило для кнопки */
             display: inline-block;
             background-color: #673ab7;
             color: white;
@@ -77,14 +78,15 @@
             cursor: pointer;
             text-decoration: none;
             transition: background-color 0.3s ease;
+            margin-bottom: 20px; /* Отступ для кнопки */
         }
         
         a.download-link:hover,
-        a.telegram-link:hover {
+        a.telegram-link:hover,
+        a.top-button:hover { /* Добавлено новое правило для кнопки */
             background-color: #512da8;
         }
         
-        /* Обновленные стили для иконки Telegram */
         .telegram-icon {
             vertical-align: middle;
             margin-right: 8px;
@@ -103,6 +105,7 @@
 <body>
     <div class="container">
         <header>
+            <a href="https://t.me/mrred_channel" class="top-button">Ищите сайт Реда? Нажмите сюда</a> <!-- Новая кнопка -->
             <h1>Ky Developer</h1>
             <p class="slogan">Без СМС и регистрации</p>
         </header>
@@ -127,7 +130,6 @@
             </div>
         </div>
         
-        <!-- Добавляем кнопку -->
         <a href="https://t.me/KyDevs" class="telegram-link" target="_blank">
             <img src="telegram.png" alt="Telegram Icon" class="telegram-icon"> Наш Telegram канал
         </a>
